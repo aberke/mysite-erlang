@@ -1,0 +1,13 @@
+{application, mysite,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  cowboy
+                 ]},
+  {mod, { mysite_app, []}},
+  {env, [{http_port, 8080}]}
+ ]}.

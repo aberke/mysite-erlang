@@ -1,0 +1,11 @@
+*.beam
+*.dump
+*.log
+*~
+.*.swp
+deps
+ebin
+log/*
+rebar
+.DS_STORE
+.rebar
