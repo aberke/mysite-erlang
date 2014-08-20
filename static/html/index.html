@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+	<head>  
+		<meta charset="utf-8">  
+		<title>Alexandra Berke</title>  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		<meta name="description" content="Site By Alexandra Berke">  
+		<meta name="author" content="Alexandra Berke">
+		<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+
+		<link rel="stylesheet" href="static/css/index.css">
+		
+		<script type="text/javascript" src="static/js/index.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-43101146-2', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</head>
+	<body>
+		<div id='content'>
+			<!-- handle div -->
+			<div id="handle-div">
+				<a target="_blank" href="https://twitter.com/AlexandraBerke"><img src="static/img/twitter_bird.png" height="40px"><p>@AlexandraBerke</p></a>
+				<a id="github-handle" target="_blank" href="http://github.com/aberke"><img src="static/img/github-icon.gif" height="40px"><p>aberke</p></a>
+				<a href="mailto:alex@alexandraberke.com?subject=[Website]"><img src="static/img/email_icon.png" height="40px"><p>alex@alexandraberke.com</p></a>
+			</div>
+			<!-- handle div -->
+
+			<!-- resume-div -->
+			<div id="resume-div">
+				<!-- <embed src="static/resume.pdf"></embed> -->
+				<img src="static/resume.png"></img>
+			</div> <!-- resume-div -->
+		</div>
+		<ul id="tabs">
+			<li id='handle-tab' onclick="selectTab(this);selectContent('handle-div');"><span class="tab-title">Handle</span></li>
+			<li id='resume-tab' onclick="selectTab(this);selectContent('resume-div');"><span class="tab-title">Resume</span></li>
+		</ul>
+	</body>
+</html>

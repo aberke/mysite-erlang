@@ -12,8 +12,8 @@
 %% ===================================================================
 
 
-start(_StartType, _StartArgs) ->
-	io:format("***** mysite_app:start()*****~n", []),
+start(_StartType, _StartArgs) ->	
+	io:format("*****mysite_app:start(~w, ~w)*****~n", [_StartType, _StartArgs]),
     Routes 		= routes(),
     Dispatch 	= cowboy_router:compile(Routes),
     Port 		= port(),
@@ -32,8 +32,10 @@ stop(_State) ->
 routes() ->
 	[
 		{'_', [
-			{"/", mysite_handler, []}
-			]}
+			{"/", cowboy_static, {file, "static/html/index.html"}},
+			{"/static/[...]", cowboy_static, {dir, "static"}},
+			{"/hello", mysite_handler, []}
+		]}
 	].
 
 port() ->
